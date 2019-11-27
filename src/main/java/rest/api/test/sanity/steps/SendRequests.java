@@ -46,6 +46,7 @@ public class SendRequests extends ConfigurationCore {
 
         if (expectedStatusCode == 200) {
             try {
+		//get unique id of transaction
                 uniquePaymentId = 
                 given().
                     contentType(ContentType.JSON).
@@ -59,7 +60,7 @@ public class SendRequests extends ConfigurationCore {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
+            //add unique id to be used later in void test
             addValueToCollector(cardNumber, uniquePaymentId);
         }
 
