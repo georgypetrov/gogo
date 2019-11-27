@@ -51,7 +51,7 @@ public class ConfigurationCore {
 	}
 
 	/**
-	 * Add value to data collector and are kept during test run.
+	 * Add value to data collector to kept during test run.
 	 * 
 	 * @param key
 	 * @param value
