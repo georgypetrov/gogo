@@ -37,14 +37,16 @@ public class ConfigurationCore {
 		String basePath = getProperty("server.base");
 		if (basePath == null) {
 			basePath = DEFAULT_SERVER_BASE;
+		} else {
+			RestAssured.basePath = basePath;
 		}
-		RestAssured.basePath = basePath;
 
 		String baseHost = getProperty("server.host");
 		if (baseHost == null) {
 			baseHost = DEFAULT_SERVER_HOST;
+		} else {
+			RestAssured.baseURI = baseHost;
 		}
-		RestAssured.baseURI = baseHost;
 
 	}
 
