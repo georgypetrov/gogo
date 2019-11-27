@@ -70,16 +70,6 @@ public class ConfigurationCore {
 	}
 
 	/**
-	 * Load config file with properties
-	 * 
-	 * @param propertyValue
-	 * @return property from config.properties file
-	 * 
-	 * @throws FileNotFoundException
-	 * @throws IOException
-	 */
-
-	/**
 	 * Get property from config file, located in
 	 * src/main/resources/config.properties
 	 * 
